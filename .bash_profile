@@ -44,11 +44,11 @@ npm() {
     if [ -d "node_modules" ]; then
       echo "Removing node_modules..."
       rm -rf node_modules
-      echo "Installing npm packages..."
-      npm install
     else
       echo "No node_modules folder found."
     fi
+    echo "Installing npm packages..."
+    npm install
   elif [[ $@ == "linked" ]]; then
     if [ -d "node_modules" ]; then
       linked_packages=$(l node_modules/ | grep ^l | awk '{print $9}')
