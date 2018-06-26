@@ -11,6 +11,7 @@ brew 'nmap'
 brew 'node@8'
 brew 'nvm'
 brew 'python'
+brew 'terminal-notifier'
 brew 'wget'
 
 # Install applications via cask
