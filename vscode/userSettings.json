@@ -1,0 +1,40 @@
+// Placez vos paramètres dans ce fichier pour remplacer les paramètres par défaut
+{
+  // Set themes
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.iconTheme": "material-icon-theme",
+
+  // Controls the rendering size of tabs in characters.
+  // If set to auto, the value will be guessed based on the opened file.
+  "editor.tabSize": 2,
+
+  // Controls if the editor will insert spaces for tabs.
+  // If set to auto, the value will be guessed based on the opened file.
+  "editor.insertSpaces": true,
+
+  // Handle whitespace - remove whitespace from end of line
+  "files.trimTrailingWhitespace": true,
+  "editor.renderWhitespace": "none",
+
+  // Enable eslint
+  "eslint.enable" : true,
+
+  // Enable file auto save after 5 seconds
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 5000,
+
+  // Highlight TODO items
+  "todohighlight.isEnable": true,
+
+  // Enable tab completion
+  "editor.tabCompletion": true,
+
+  // Add horizontal line ruler
+  "editor.rulers": [100],
+
+  // Default search configurations
+  "search.exclude": {
+      "test/": true,
+      "node_modules/": true,
+  }
+}
