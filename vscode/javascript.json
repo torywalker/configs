@@ -1,0 +1,30 @@
+{
+	"Console Log": {
+		"prefix": "conlo",
+			"body": [
+				"console.log('%c${1}:', 'color:${2:hotpink}', ${3});"
+			],
+				"description": "Add a console.log with colors"
+	},
+	"Debugger": {
+		"prefix": "dbg",
+			"body": [
+				"debugger; // FIXME: Remove;"
+			],
+				"description": "Add a debugger with a fixme comment"
+	},
+  "FIXME": {
+    "prefix": "fix",
+      "body": [
+        "// FIXME: ${1}"
+      ],
+        "description": "Add a fixme comment"
+  },
+	"TODO": {
+		"prefix": "todo",
+			"body": [
+				"// TODO: ${1}"
+			],
+				"description": "Add a todo comment"
+	}
+}
