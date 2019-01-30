@@ -2,9 +2,9 @@
 	"Console Log": {
 		"prefix": "conlo",
 			"body": [
-				"console.log('%c${1}:', 'color:${2:hotpink}', ${3});"
+				"console.log({ ${1} }); // FIXME: Remove;"
 			],
-				"description": "Add a console.log with colors"
+				"description": "Add a console.log with a fixme comment"
 	},
 	"Debugger": {
 		"prefix": "dbg",

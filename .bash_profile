@@ -1,3 +1,7 @@
+# Set Paths
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
 # Enable color
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='3;33'
@@ -22,6 +26,9 @@ alias space='diskutil info / | grep "Volume Available Space"'
 alias g='git'
 alias gd='git diff'
 alias gs='git status'
+
+# Docker container aliases
+alias ctf='docker run -it --rm ubuntu-ctf /bin/bash'
 
 # Run Kali Linux in VirtualBox
 alias kali="vboxmanage startvm '$KALI_VM_NAME'"

@@ -27,7 +27,7 @@
   "todohighlight.isEnable": true,
 
   // Enable tab completion
-  "editor.tabCompletion": true,
+  "editor.tabCompletion": "on",
 
   // Add horizontal line ruler
   "editor.rulers": [100],
