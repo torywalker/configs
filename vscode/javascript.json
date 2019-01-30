@@ -1,10 +1,17 @@
 {
-  "Console Log": {
+  "Console Log (Node)": {
     "prefix": "conlo",
     "body": [
       "console.log({ ${1} }); // FIXME: Remove;"
     ],
     "description": "Add a console.log with a fixme comment"
+  },
+  "Remember to Remove": {
+    "prefix": "rmv",
+    "body": [
+      "// FIXME: Remove;"
+    ],
+    "description": "Add a fixme comment"
   },
   "Debugger": {
     "prefix": "dbg",
