@@ -17,7 +17,7 @@
   "editor.renderWhitespace": "none",
 
   // Enable eslint
-  "eslint.enable" : true,
+  "eslint.enable": true,
 
   // Enable file auto save after 5 seconds
   "files.autoSave": "afterDelay",
@@ -30,11 +30,13 @@
   "editor.tabCompletion": "on",
 
   // Add horizontal line ruler
-  "editor.rulers": [100],
+  "editor.rulers": [
+    100
+  ],
 
   // Default search configurations
   "search.exclude": {
-      "test/": true,
-      "node_modules/": true,
+    "test/": true,
+    "node_modules/": true
   }
 }

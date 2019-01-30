@@ -1,30 +1,30 @@
 {
-	"Console Log": {
-		"prefix": "conlo",
-			"body": [
-				"console.log({ ${1} }); // FIXME: Remove;"
-			],
-				"description": "Add a console.log with a fixme comment"
-	},
-	"Debugger": {
-		"prefix": "dbg",
-			"body": [
-				"debugger; // FIXME: Remove;"
-			],
-				"description": "Add a debugger with a fixme comment"
-	},
+  "Console Log": {
+    "prefix": "conlo",
+    "body": [
+      "console.log({ ${1} }); // FIXME: Remove;"
+    ],
+    "description": "Add a console.log with a fixme comment"
+  },
+  "Debugger": {
+    "prefix": "dbg",
+    "body": [
+      "debugger; // FIXME: Remove;"
+    ],
+    "description": "Add a debugger with a fixme comment"
+  },
   "FIXME": {
     "prefix": "fix",
-      "body": [
-        "// FIXME: ${1}"
-      ],
-        "description": "Add a fixme comment"
+    "body": [
+      "// FIXME: ${1}"
+    ],
+    "description": "Add a fixme comment"
   },
-	"TODO": {
-		"prefix": "todo",
-			"body": [
-				"// TODO: ${1}"
-			],
-				"description": "Add a todo comment"
-	}
+  "TODO": {
+    "prefix": "todo",
+    "body": [
+      "// TODO: ${1}"
+    ],
+    "description": "Add a todo comment"
+  }
 }
