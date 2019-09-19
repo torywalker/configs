@@ -6,13 +6,13 @@
     ],
     "description": "Add a console.log with a fixme comment"
   },
-	"Console Dir (Node)": {
-		"prefix": "condi",
-		"body": [
-			"console.dir(${1}); // FIXME: Remove;"
-		],
-		"description": "Add a console.dir with a predefined object for easy object inspection"
-	},
+  "Console Dir (Node)": {
+    "prefix": "condi",
+    "body": [
+      "console.dir(${1}); // FIXME: Remove;"
+    ],
+    "description": "Add a console.dir with a predefined object for easy object inspection"
+  },
   "Remember to Remove": {
     "prefix": "rmv",
     "body": [
@@ -42,15 +42,15 @@
     "description": "Add a todo comment"
   }
   "Initial Test": {
-		"prefix": "testinit",
-		"body": [
-			"// FIXME: Add Tests",
-			"describe('Default Test', () => {",
-			"  test('Should always pass', (done) => {",
-			"    expect(1 + 1).toEqual(2);",
-			"    done();",
-			"  });",
-			"});",
-		]
-	}
+    "prefix": "testinit",
+    "body": [
+      "// FIXME: Add Tests",
+      "describe('Default Test', () => {",
+      "  test('Should always pass', (done) => {",
+      "    expect(1 + 1).toEqual(2);",
+      "    done();",
+      "  });",
+      "});",
+    ]
+  }
 }
