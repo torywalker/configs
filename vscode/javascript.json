@@ -40,7 +40,7 @@
       "// TODO: ${1}"
     ],
     "description": "Add a todo comment"
-  }
+  },
   "Initial Test": {
     "prefix": "testinit",
     "body": [
