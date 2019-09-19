@@ -1,0 +1,44 @@
+{
+  "Console Log (Node)": {
+    "prefix": "conlo",
+    "body": ["console.log({ ${1} }); // FIXME: Remove;"],
+    "description": "Add a console.log with a predefined object for easy variable association"
+  },
+  "Console Dir (Node)": {
+    "prefix": "condi",
+    "body": ["console.dir(${1}); // FIXME: Remove;"],
+    "description": "Add a console.dir with a predefined object for easy object inspection"
+  },
+  "Remember to Remove": {
+    "prefix": "rmv",
+    "body": ["// FIXME: Remove;"],
+    "description": "Add a fixme comment to remind above removal"
+  },
+  "Debugger": {
+    "prefix": "dbg",
+    "body": ["debugger; // FIXME: Remove;"],
+    "description": "Add a debugger with a fixme comment"
+  },
+  "FIXME": {
+    "prefix": "fix",
+    "body": ["// FIXME: ${1}"],
+    "description": "Add a fixme comment"
+  },
+  "TODO": {
+    "prefix": "todo",
+    "body": ["// TODO: ${1}"],
+    "description": "Add a todo comment"
+  },
+  "Initial Test": {
+    "prefix": "testinit",
+    "body": [
+      "// FIXME: Add Tests",
+      "describe('Default Test', () => {",
+      "  test('Should always pass', (done) => {",
+      "    expect(1 + 1).toEqual(2);",
+      "    done();",
+      "  });",
+      "});"
+    ]
+  }
+}
