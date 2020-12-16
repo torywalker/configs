@@ -24,11 +24,18 @@ alias space='diskutil info / | grep "Volume Available Space"'
 
 # Git aliases
 alias g='git'
+alias ga='git add .'
 alias gd='git diff'
 alias gs='git status'
+alias gch='git checkout'
+alias gpl='git pull'
+alias gpp='git push'
+alias gm='git merge'
+alias gcm='git merge -m '
 
 # Docker container aliases
 alias ctf='docker run -it --rm ubuntu-ctf /bin/bash'
+alias jupyter='docker run -p 8888:8888 jupyter/minimal-notebook'
 
 # Run Kali Linux in VirtualBox
 alias kali="vboxmanage startvm '$KALI_VM_NAME'"
