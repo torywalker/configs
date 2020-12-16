@@ -21,6 +21,7 @@ alias l='ls -al'
 alias cd..='cd ../'
 alias ..='cd ../'
 alias space='diskutil info / | grep "Volume Available Space"'
+alias clear="clear && printf '\e[3J\'"
 
 # Git aliases
 alias g='git'
