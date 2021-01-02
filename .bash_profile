@@ -17,11 +17,11 @@ PRFL_NOCLR='\e[0m'
 KALI_VM_NAME='Kali-64'
 
 # General aliases
+alias ?=history
 alias l='ls -al'
 alias cd..='cd ../'
 alias ..='cd ../'
 alias space='diskutil info / | grep "Volume Available Space"'
-alias clear="clear && printf '\e[3J\'"
 
 # Git aliases
 alias g='git'
@@ -36,7 +36,7 @@ alias gcm='git merge -m '
 
 # Docker container aliases
 alias ctf='docker run -it --rm ubuntu-ctf /bin/bash'
-alias jupyter='docker run -p 8888:8888 jupyter/minimal-notebook'
+alias jupyter='docker run -p 8888:8888  -v ~/Dropbox/Projects/Jupyter/work:/home/jovyan/work jupyter/minimal-notebook'
 
 # Run Kali Linux in VirtualBox
 alias kali="vboxmanage startvm '$KALI_VM_NAME'"
