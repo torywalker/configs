@@ -17,11 +17,11 @@ PRFL_NOCLR='\e[0m'
 KALI_VM_NAME='Kali-64'
 
 # General aliases
-alias ?=history
 alias l='ls -al'
 alias cd..='cd ../'
 alias ..='cd ../'
 alias space='diskutil info / | grep "Volume Available Space"'
+alias tf='terraform'
 
 # Git aliases
 alias g='git'
@@ -33,6 +33,9 @@ alias gpl='git pull'
 alias gpp='git push'
 alias gm='git merge'
 alias gcm='git merge -m '
+alias gsp='git stash pop'
+alias gsh='git stash'
+alias grb='git rebase --root -i'
 
 # Docker container aliases
 alias ctf='docker run -it --rm ubuntu-ctf /bin/bash'
