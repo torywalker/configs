@@ -22,20 +22,28 @@ alias cd..='cd ../'
 alias ..='cd ../'
 alias space='diskutil info / | grep "Volume Available Space"'
 alias tf='terraform'
+alias hist='history | grep'
 
 # Git aliases
 alias g='git'
-alias ga='git add .'
+alias ga='git add --all'
 alias gd='git diff'
 alias gs='git status'
 alias gch='git checkout'
 alias gpl='git pull'
 alias gpp='git push'
 alias gm='git merge'
-alias gcm='git merge -m '
 alias gsp='git stash pop'
 alias gsh='git stash'
-alias grb='git rebase --root -i'
+
+# Git alias functions
+function gcm() {
+  git commit -m "$1" 
+}
+
+function gcl() {
+  git clone "$1"
+}
 
 # Docker container aliases
 alias ctf='docker run -it --rm ubuntu-ctf /bin/bash'
@@ -107,4 +115,3 @@ npm() {
     command npm "$@"
   fi
 }
-
