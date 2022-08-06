@@ -23,8 +23,9 @@ alias ..='cd ../'
 alias space='diskutil info / | grep "Volume Available Space"'
 alias tf='terraform'
 alias hist='history | grep'
+alias proj="cd ~/projects"
 
-# Git aliases
+# Git functions and aliases
 alias g='git'
 alias ga='git add --all'
 alias gd='git diff'
@@ -38,11 +39,19 @@ alias gsh='git stash'
 
 # Git alias functions
 function gcm() {
-  git commit -m "$1" 
+  git commit -m "$1"
 }
 
 function gcl() {
   git clone "$1"
+}
+
+function gcc() {
+  git status && git commit -m "$1" -n && git status
+}
+
+function gac() {
+  git add . && gcc
 }
 
 # Docker container aliases
@@ -114,4 +123,10 @@ npm() {
   else
     command npm "$@"
   fi
+}
+
+journal() {
+  file_name=$(date +"%Y-%m-%d")
+  touch ~/Dropbox/Documents/Journal/"$file_name.md"
+  open ~/Dropbox/Documents/Journal/"$file_name.md"
 }
