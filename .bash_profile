@@ -24,6 +24,9 @@ alias space='diskutil info / | grep "Volume Available Space"'
 alias tf='terraform'
 alias hist='history | grep'
 
+# Coding aliases
+alias cf='composer format'
+
 # Git aliases
 alias g='git'
 alias ga='git add --all'
@@ -35,6 +38,7 @@ alias gpp='git push'
 alias gm='git merge'
 alias gsp='git stash pop'
 alias gsh='git stash'
+alias glg="git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%an%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)- %s%C(reset)' --all"
 
 # Git alias functions
 function gcm() {
